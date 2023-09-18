@@ -1,11 +1,14 @@
 import 'package:flutter/widgets.dart';
 
+/// Observes the window changes and provides a [MediaQuery]
+/// always up to date.
 class MediaQueryObserver extends StatefulWidget {
   final Widget child;
 
   const MediaQueryObserver({
-    @required this.child,
-  });
+    Key? key,
+    required this.child,
+  }) : super(key: key);
 
   @override
   _MediaQueryObserverState createState() => _MediaQueryObserverState();

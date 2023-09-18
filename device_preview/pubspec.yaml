@@ -1,36 +1,27 @@
 name: device_preview
-version: 0.4.6
-description: Approximate how your app looks and performs on another device.
+version: 1.1.0
+description: Approximate how your Flutter app looks and performs on another device.
 homepage: https://github.com/aloisdeniel/flutter_device_preview
 
 environment:
-  sdk: '>=2.6.0 <3.0.0' 
+  sdk: '>=3.1.0 <4.0.0' 
 
 dependencies:
-  font_awesome_flutter: ^8.8.1
-  http: ^0.12.0
-  freezed_annotation: ^0.7.1 
-  json_annotation: ^3.0.0
-  flutter: 
-    sdk: flutter 
-  meta: ^1.1.8 
-  shared_preferences: ^0.5.6+3
-  shared_preferences_macos: ^0.0.1+6
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.0.5
+  device_frame: ^1.1.0
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  shared_preferences: ^2.2.1
+  collection: ^1.17.2
 
-  # This is a temporary hack to enable Windows to work. It is not recommended
-  # since this package may change at any time in ways that break. 
-  #shared_preferences_fde:
-  #  git:
-  #    url: https://github.com/google/flutter-desktop-embedding/
-  #    path: plugins/flutter_plugins/shared_preferences_fde
- 
 dev_dependencies:
-  freezed: ^0.10.4
-  json_serializable: ^3.2.0
-  build_runner: ^1.8.0
   flutter_test:
-    sdk: flutter 
-  pedantic: 1.8.0+1
-
-dependency_overrides:
-  pedantic: ^1.9.0
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  build_runner: ^2.4.6
+  freezed: ^2.4.2
+  json_serializable: ^6.7.1
