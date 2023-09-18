@@ -3,6 +3,8 @@ version: 1.1.0
 description: Approximate how your Flutter app looks and performs on another device.
 homepage: https://github.com/aloisdeniel/flutter_device_preview
 
+publish_to: none
+
 environment:
   sdk: '>=3.1.0 <4.0.0' 
 
@@ -12,7 +14,10 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   provider: ^6.0.5
-  device_frame: ^1.1.0
+  device_frame:
+    git:
+      url: https://github.com/thanhle1547/flutter_device_preview
+      path: device_frame
   freezed_annotation: ^2.4.1
   json_annotation: ^4.8.1
   shared_preferences: ^2.2.1
