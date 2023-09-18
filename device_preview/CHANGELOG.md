@@ -1,3 +1,11 @@
+## 1.1.1
+
+* Updated dependencies.
+* Fix #45 Multiple widgets used the same GlobalKey.
+* Remove unnecessary padding below the text field.
+* Corrects the iPhone 12 screen size and safe area.
+* Add zooming & fix frame sizing
+
 ## 1.1.0
 
 * Updated dependencies and adding support for Flutter 3.0.
